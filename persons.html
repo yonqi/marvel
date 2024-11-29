@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title> Персонажи Marvel </title> <!-- название сайта -->
+    <link rel="icon" type="image/png" href="Фавиконка.png"> <!-- фавиконка-->
+  </head>
+    <section class="marvel-landing">
+        <header class="header">
+          <div class="logo">
+            <img src="marvel_mini.svg" alt="Marvel Logo">
+          </div>
+          <nav class="nav-container">
+            <div class="nav-group">
+                <a href="about_marvel.html" class="nav-item">О Marvel</a>
+                <a href="persons.html" class="nav-item-active">Персонажи</a>
+                <a href="movies.html" class="nav-item">Фильмы</a>
+            </div>
+          </nav>
+          <link rel="stylesheet" href="styles.css">
+        </header>
+
+        <body>
+
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="Персонажи/Персонажи_обложка.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="overlay"></div>
+        </div>
+    
+        <div class="zagolovok_video">
+          <h1 class="section-title">Персонажи MARVEL</h1>
+        </div>
+
+        <section class="quiz">
+          <div class="container">
+            <div class="content-box">
+              <div id="quiz-container">
+                <h1>Какой ты персонаж Marvel?</h1>
+                <div id="question-container">
+                    <p id="question-text">Ваш вопрос будет здесь</p>
+                    <div id="answer-options">
+                        <!-- Варианты ответов будут динамически добавляться сюда -->
+                    </div>
+                </div>
+                <button id="next-button">Далее</button>
+              </div>
+
+              <div id="result-container" style="display:none;">
+                <h1>Твой персонаж: <span id="result-name"></span></h1>
+                <p id="result-description"></p>
+              </div>
+            </div>
+          </div>
+        </section> 
+          
+        <section class="movies-section">
+          <section class="persons">
+          <h2 class="section-title">персонажи</h2>
+          <div class="divider"></div>
+
+          <div class="search-container">
+            <h2 class = "zagolovok2">ПОИСК персонажа: </h2>
+            <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Введите имя персонажа..." 
+                oninput="filterCards()"
+            />
+          </div>
+
+          <div class="movies-grid" id="movies-grid"></div>
+        </section>
+        </section>
+      
+        <script src="script.js"></script>
+        <script src="script_persons.js"></script>
+
+        </body>
+      
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="footer-section about">
+                  <h3>О нас</h3>
+                  <p>
+                      Мы предоставляем самую актуальную информацию о киновселенной Marvel.
+                      Следите за новостями и обновлениями!
+                  </p>
+              </div>
+              <div class="footer-section links">
+                  <h3>Навигация</h3>
+                  <ul>
+                    <li><a href="about_marvel.html">О Marvel</a></li>
+                    <li><a href="persons.html">Персонажи</a></li>
+                    <li><a href="movies.html">Фильмы</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section marvel">
+                  <h3>Страницы Marvel на других языках</h3>
+                  <ul>
+                    <li><a href="https://www.marvel.com/">Официальный сайт Marvel</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; Анна Коктомова 2024 Marvel | Все права защищены.</p>
+              <img src="AKoktomova.svg">
+          </div>
+        </footer>
+      </section>

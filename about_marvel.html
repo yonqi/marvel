@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title> Marvel | Сайт про киновселенную Marvel </title> <!-- название сайта -->
+    <link rel="icon" type="image/png" href="Фавиконка.png"> <!-- фавиконка-->
+  </head>
+    <section class="marvel-landing">
+        <header class="header">
+          <div class="logo">
+            <img src="marvel_mini.svg" alt="Marvel Logo">
+          </div>
+          <nav class="nav-container">
+            <div class="nav-group">
+              <a href="about_marvel.html" class="nav-item-active">О Marvel</a>
+              <a href="persons.html" class="nav-item">Персонажи</a>
+              <a href="movies.html" class="nav-item">Фильмы</a>
+            </div>
+          </nav>
+          <link rel="stylesheet" href="styles.css">
+        </header>
+
+        <body>
+      
+        <main class="main-content">
+            <div class="svg-container">
+                <img src="MARVEL.svg" alt="marvel">
+            </div>
+          <div class="content-wrapper">
+            <p class="description">
+              Кинематографическая вселенная Marvel или MCU - это медиафраншиза, созданная Marvel Studios
+              и действие которой происходит в основном в
+              общей вселенной, а некоторые части также разворачиваются в смежных или
+              разветвляющихся реальностях</a>.
+            </p>
+            <img src="О_Марвел/Главная картинка.png" alt="Marvel Cinematic Universe Collage" class="hero-image">
+          </div>
+        </main>
+      
+        <section class="main-idea">
+          <div class="container">
+            <div class="content-box">
+              <h1>ГЛАВНАЯ ИДЕЯ MCU</h1>
+              <p>
+                Основной посыл киновселенной Marvel — это тема героизма, командной работы и личного роста.
+                Герои сталкиваются с глобальными угрозами, но их человечность, слабости и внутренние конфликты делают их близкими зрителю.
+              </p>
+              <p>
+                MCU продолжает развиваться, объединяя зрителей по всему миру и создавая всё более амбициозные проекты.
+              </p>
+            </div>
+          </div>
+        </section>
+      
+        <section class="movies-section">
+          <h2 class="section-title"><a href="movies.html">фильмы →</a></h2> 
+          <div class="divider"></div>
+
+          <div class="carousel">
+            <button class="arrow left-arrow" onclick="moveCarousel()"><img src="button.svg" alt="Button"></span></button>
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="О_Марвел/Мстители.png" alt="Мстители постер" class="movie-poster">
+                        <div class="details">
+                          <h3 class="movie-title">Мстители</h3>
+                          <p class="movie-year">2012 г.</p>
+                          <p class="movie-description">Когда угроза мирового масштаба объединяет самых могущественных героев Земли, «Мстители» подарят вам незабываемое зрелище эпических сражений и силы, способной изменить ход истории!</p>
+                          <a href="movie_avengers.html" class="read-more">Подробнее ...</a>            
+                        </div>
+                    </div>
+                    <div href="pers_spider_man.html" class="carousel-item">
+                        <img src="О_Марвел/Человек паук.png" alt="Человек-паук: Нет пути домой постер" class="movie-poster">
+                        <div class="details">
+                          <h3 class="movie-title">Человек-паук: Нет пути домой</h3>
+                          <p class="movie-year">2021 г.</p>
+                          <p class="movie-description">Погрузитесь в захватывающее путешествие по мультивселенной — «Человек-паук: Нет пути домой» раскроет перед вами невероятные тайны и неожиданные встречи с героями из разных миров!</p>            
+                          <a href="movie_avengers.html" class="read-more">Подробнее ...</a>  
+                        </div>
+                      </div>
+                      <div href="pers_spider_man.html" class="carousel-item">
+                        <img src="О_Марвел/Мстители_финал.jpg" alt="Мстители: Финал" class="movie-poster">
+                        <div class="details">
+                          <h3 class="movie-title">Мстители: Финал</h3>
+                          <p class="movie-year">2019 г.</p>
+                          <p class="movie-description">Эпическое завершение саги о Мстителях. Это фильм, который не только изменит судьбы любимых персонажей, но и принесет невероятные эмоции, кульминацию, полную неожиданностей и жертв.</p>            
+                          <a href="movie_avengers.html" class="read-more">Подробнее ...</a>  
+                        </div>
+                      </div>
+                    <div class="carousel-item">
+                        <img src="О_Марвел/Железный человек.png" alt="Железный человек постер" class="movie-poster">
+                        <div class="details">
+                          <h3 class="movie-title">Железный человек</h3>
+                          <p class="movie-year">2008 г.</p>
+                          <p class="movie-description">Откройте для себя начало легенды, которая изменила кинематограф — «Железный человек» расскажет о становлении гениального Тони Старка в непобедимого героя с необычным оружием!</p>    
+                          <a href="movie_avengers.html" class="read-more">Подробнее ...</a>          
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="О_Марвел/Стражи_галактики.png" alt="Стражи Галактики" class="movie-poster">
+                      <div class="details">
+                        <h3 class="movie-title">Стражи Галактики</h3>
+                        <p class="movie-year">2014 г.</p>
+                        <p class="movie-description">Увлекательное космическое приключение, где команда, непохожая на героев, спасает вселенную, несмотря на свои странности и разногласия. Яркий юмор, крутая музыка и харизматичные персонажи ждут Вас!</p>    
+                        <a href="movie_avengers.html" class="read-more">Подробнее ...</a>          
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="О_Марвел/Веном.png" alt="Веном" class="movie-poster">
+                      <div class="details">
+                        <h3 class="movie-title">Веном</h3>
+                        <p class="movie-year">2018 г.</p>
+                        <p class="movie-description">Захватывающий антигеройский фильм, где Эдди Брок объединяется с инопланетным симбиотом, чтобы стать грозным Веномом. Сумасшедшая смесь экшена и темного юмора, которая покажет вам, как далеко может зайти борьба за выживание!</p>    
+                        <a href="movie_avengers.html" class="read-more">Подробнее ...</a>          
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="О_Марвел/Тор.png" alt="Тор" class="movie-poster">
+                      <div class="details">
+                        <h3 class="movie-title">Тор</h3>
+                        <p class="movie-year">2011 г.</p>
+                        <p class="movie-description">Эпическое начало истории бога грома, который оказывается изгнанным из Асгарда и отправляется на Землю, чтобы узнать свою истинную судьбу. Сочетание мифологии и зрелищных битв делает этот фильм ярким стартом для одного из самых мощных героев Marvel!</p>    
+                        <a href="movie_avengers.html" class="read-more">Подробнее ...</a>          
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="О_Марвел/капитан_марвел_2.png" alt="Капитан Марвел 2" class="movie-poster">
+                      <div class="details">
+                        <h3 class="movie-title">Капитан Марвел 2</h3>
+                        <p class="movie-year">2023 г.</p>
+                        <p class="movie-description">Продолжение истории Карол Денверс, где она вновь объединяется с другими мощными героинями вселенной Marvel. Увлекательные путешествия по космосу и захватывающая борьба с новыми угрозами — всё это ждёт зрителей в этом ярком и мощном фильме!</p>    
+                        <a href="movie_avengers.html" class="read-more">Подробнее ...</a>          
+                      </div>
+                    </div>
+                </div>
+          </div>
+
+          <h2 class="section-title"><a href="persons.html">Персонажи →</a></h2>
+          <div class="divider"></div>
+
+          <div class="carousel-pers">
+            <button class="arrow left-arrow" onclick="moveCarouselPers()"><img src="button.svg" alt="Button"></span></button>
+                <div class="carousel-container-pers">
+                    <a href="pers_spider_man.html" class="carousel-item-pers">
+                      <img src="О_Марвел/Капитан_Америка_персонажи.svg" alt="Капитан Америка" class="pers-poster">
+                      <h3 class="pers-title">Капитан Америка</h3>          
+                    </a>
+                    <a href="pers_spider_man.html" class="carousel-item-pers">
+                        <img src="О_Марвел/Человек-паук_персонажи.svg" alt="Человек-паук" class="pers-poster">
+                        <div class="details">
+                          <h3 class="pers-title">Человек-паук</h3>
+                        </div>
+                    </a>
+                    <a href="pers_spider_man.html" class="carousel-item-pers">
+                        <img src="О_Марвел/Халк_персонажи.svg" alt="Халк" class="pers-poster">
+                        <div class="details">
+                          <h3 class="pers-title">Халк</h3>        
+                        </div>
+                    </a>
+                    <a href="pers_spider_man.html" class="carousel-item-pers">
+                      <img src="О_Марвел/Тор_персонажи.svg" alt="Тор" class="pers-poster">
+                      <div class="details">
+                        <h3 class="pers-title">Тор</h3>        
+                      </div>
+                    </a>
+                    <a href="pers_spider_man.html" class="carousel-item-pers">
+                      <img src="О_Марвел/Доктор_стрэндж_персонажи.svg" alt="Доктор Стрэндж" class="pers-poster">
+                      <div class="details">
+                        <h3 class="pers-title">Доктор Стрэндж</h3>        
+                      </div>
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </section>
+
+        <section class="history">
+          <div class="container">
+            <div class="content-box">
+              <h1>ИСТОРИЯ СОЗДАНИЯ И РАЗВИТИЯ КИНОВСЕЛЕННОЙ MARVEL</h1>
+              <h2 class = "zagolovok2">РАННИЕ ПОПЫТКИ И НАЧАЛО ПУТИ (1990-е — 2008)</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <h3>РАННИЕ ГОДЫ MARVEL STUDIOS</h3>
+                  <p>В 1990-х годах компания Marvel находилась в кризисе из-за финансовых трудностей. Чтобы справиться с проблемами, она продавала права на своих персонажей другим киностудиям:</p>
+                  <ul>
+                    <li>Sony Pictures приобрела права на Человека-Паука.</li>
+                    <li>20th Century Fox — на Людей Икс и Фантастическую четвёрку.</li>
+                  </ul>
+                </div>
+            
+                <div class="section">
+                  <h3>ЗАПУСК MCU: "ЖЕЛЕЗНЫЙ ЧЕЛОВЕК" (2008)</h3>
+                  <p>В 2005 году Marvel взяла кредит в $525 млн под залог прав на своих персонажей и основала студию Marvel Studios.</p>
+                </div>
+            
+                <div class="section">
+                  <h3>СОЗДАНИЕ MARVEL STUDIOS</h3>
+                  <p>Первым фильмом Marvel Studios стал "Железный человек". Режиссёр Джон Фавро и актёр Роберт Дауни-младший превратили этот проект в хит.</p>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <div class="scroll-image">
+          <img src="Железный_человек_прокрутка.svg">
+        </div>
+      
+        
+        <section class="1phase">
+          <div class="container">
+            <div class="content-box">
+              <h2 class = "zagolovok2">Первая фаза (2008–2012): Формирование Мстителей</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <h3>Ключевые фильмы:</h3>
+                  <ul>
+                    <li>"Железный человек" (2008)</li>
+                    <li>"Невероятный Халк" (2008)</li>
+                    <li>"Железный человек 2" (2010)</li>
+                    <li>"Тор" (2011)</li>
+                    <li>"Капитан Америка: Первый мститель" (2011)</li>
+                    <li>"Мстители" (2012)</li>
+                  </ul>
+                </div>
+            
+                <div class="section">
+                  <h3>Основные достижения:</h3>
+                  <p>Каждый из фильмов рассказал историю отдельного героя, вводя их в единую вселенную.</p>
+                  <p>"Мстители" (2012) объединили героев в первую суперкоманду. Режиссер Джосс Уидон показал, что фильмы с несколькими главными героями могут быть успешными. Картина собрала более $1.5 млрд и доказала жизнеспособность концепции MCU.</p>
+                </div>
+        
+              </div>
+          </div>
+        </section>
+      
+        <div class="scroll-image">
+          <img src="1_фаза_прокрутка.svg">
+        </div>
+
+        <section class="2phase">
+          <div class="container">
+            <div class="content-box">
+              <h2 class = "zagolovok2">Вторая фаза (2013–2015): Расширение Вселенной</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <h3>Ключевые фильмы:</h3>
+                  <ul>
+                    <li>«Железный человек 3» (2013)</li>
+                    <li>«Тор 2: Царство тьмы»</li>
+                    <li>«Первый мститель: Другая война» (2014)</li>
+                    <li>«Стражи Галактики» (2014)</li>
+                    <li>«Мстители: Эра Альтрона» (2015)</li>
+                    <li>«Человек-муравей» (2015)</li>
+                  </ul>
+                </div>
+            
+                <div class="section">
+                  <h3>Основные достижения:</h3>
+                  <p>Появились новые герои (Стражи Галактики, Человек-муравей).</p>
+                  <p>Сюжеты стали более сложными и зрелыми. Например, в «Капитане Америка: Зимний солдат» исследуются темы предательства и политики.</p>
+                  <p>«Мстители: Эра Альтрона» добавили глобальные угрозы, такие как Альтрона и намёк на Таноса.</p>
+                </div>
+        
+              </div>
+          </div>
+        </section>
+      
+        <div class="scroll-image">
+          <img src="2_фаза_прокрутка.svg">
+        </div>
+
+        <section class="3phase">
+          <div class="container">
+            <div class="content-box">
+              <h2 class = "zagolovok2">Третья фаза (2016–2019): Кульминация «Саги бесконечности»</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <h3>Ключевые фильмы:</h3>
+                  <ul>
+                    <li>«Первый мститель: Противостояние» (2016)</li>
+                    <li>«Доктор Стрэндж» (2016)</li>
+                    <li>«Человек-паук: Возвращение домой» (2017)</li>
+                    <li>«Стражи Галактики. Часть 2» (2017)</li>
+                    <li>«Тор: Рагнарёк» (2017)</li>
+                    <li>"Черная пантера" (2018)</li>
+                    <li>«Мстители: Война бесконечности» (2018)</li>
+                    <li>«Мстители: Финал» (2019)</li>
+                  </ul>
+                </div>
+            
+                <div class="section">
+                  <h3>Основные достижения:</h3>
+                  <p>«Мстители: Война бесконечности» и «Мстители: Финал» стали главным событием киновселенной Marvel. Танос собирает Камни бесконечности и уничтожает половину Вселенной, а затем герои находят способ все исправить.</p>
+                  <p>Герои из разных фильмов объединились, и зрители увидели масштабные сражения с участием десятков персонажей.</p>
+                  <p>«Мстители: Финал» собрали 2,8 миллиарда долларов, став вторым самым кассовым фильмом в истории.</p>
+                </div>
+        
+              </div>
+          </div>
+        </section>
+      
+        <div class="scroll-image">
+          <img src="3_фаза_прокрутка.svg">
+        </div>
+
+        <section class="4phase">
+          <div class="container">
+            <div class="content-box">
+              <h2 class = "zagolovok2">Четвертая фаза (2021–2022): перезагрузка и мультивселенная</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <h3>Ключевые проекты:</h3>
+                  <ul>
+                    <li>Фильмы: «Чёрная вдова» (2021), «Шан-Чи» (2021), «Человек-паук: Нет пути домой» (2021), «Доктор Стрэндж: В мультивселенной безумия» (2022).</li>
+                    <li>Сериалы: «Ванда/Вижн», «Сокол и Зимний Солдат», «Локи», «Секретное вторжение».</li>
+                  </ul>
+                </div>
+            
+                <div class="section">
+                  <h3>Основные достижения:</h3>
+                  <p>MCU вышла на платформу Disney+, запустив сериалы, связанные с фильмами.</p>
+                  <p>Введены новые персонажи (Шан-Чи, Вечные, Кейт Бишоп).</p>
+                  <p>Развитие темы мультивселенной открыло двери для бесконечного числа новых историй.</p>
+                </div>
+        
+              </div>
+          </div>
+        </section>
+      
+        <div class="scroll-image">
+          <img src="4_фаза_прокрутка.svg">
+        </div>
+
+        <section class="5phase">
+          <div class="container">
+            <div class="content-box">
+              <h2 class = "zagolovok2">Пятая и последующие фазы (2023 и далее): новый этап</h2>
+            
+              <div class="content">
+                <div class="section">
+                  <p>После завершения «Саги Бесконечности» MCU продолжает развиваться. Основное внимание теперь уделяется:</p>
+                  <ul>
+                    <li>Развитию мультивселенной.</li>
+                    <li>Новым героям (Фантастическая четверка, Блэйд).</li>
+                    <li>Подготовке к событиям "Секретных войн".</li>
+                  </ul>
+                </div>
+        
+              </div>
+          </div>
+        </section>
+      
+        <div class="scroll-image">
+          <img src="5_фаза_прокрутка.svg">
+        </div>
+      
+      
+        <script src="script.js"></script>
+        <script src="script_about.js"></script>
+
+        </body>
+      
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="footer-section about">
+                  <h3>О нас</h3>
+                  <p>
+                      Мы предоставляем самую актуальную информацию о киновселенной Marvel.
+                      Следите за новостями и обновлениями!
+                  </p>
+              </div>
+              <div class="footer-section links">
+                  <h3>Навигация</h3>
+                  <ul>
+                    <li><a href="about_marvel.html">О Marvel</a></li>
+                    <li><a href="persons.html">Персонажи</a></li>
+                    <li><a href="movies.html">Фильмы</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section marvel">
+                  <h3>Страницы Marvel на других языках</h3>
+                  <ul>
+                    <li><a href="https://www.marvel.com/">Официальный сайт Marvel</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; Анна Коктомова 2024 Marvel | Все права защищены.</p>
+              <img src="AKoktomova.svg">
+          </div>
+        </footer>
+        
+      </section>

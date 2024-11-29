@@ -1,0 +1,923 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Light'), local('Muller-Light'),
+        url('MullerLight.woff2') format('woff2'),
+        url('MullerLight.woff') format('woff'),
+        url('MullerLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #b61201;
+}
+
+.marvel-landing {
+  display: flex;
+  flex-direction: column;
+  clip-path: inset(0 0 0 0);
+  padding: 25px 0 0 0;
+}
+
+.header {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 30px;
+  position: sticky;
+  top: 25px;
+  z-index: 1000;
+}
+
+.logo {
+  aspect-ratio: 2.88;
+  object-fit: contain;
+  height: 60px;
+}
+
+.nav-container {
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  gap: 40px 52px;
+  flex-wrap: wrap;
+  padding: 10px 14px 10px 14px;
+  font: 300 16px 'Muller', sans-serif;
+  letter-spacing: -0.72px;
+}
+
+.nav-group {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-item {
+  background-color: #fff;
+  color: #353535;
+  border: 1px solid #e9e9e9;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: auto 0;
+}
+
+.nav-item-active {
+  border-radius: 30px;
+  background-color: #ad1300;
+  color: #fff;
+  text-align: center;
+  padding: 15px 28px;
+  border: 1px solid #fff;
+}
+
+.main-content {
+  margin: 40px 0 48% 10%;
+  width: 90%;
+}
+
+.description {
+  position: absolute;
+  color: #fff;
+  z-index: 10;
+  align-self: stretch;
+  margin: 5% -38px auto 0;
+  font: 400 1.5vw 'Muller', sans-serif;
+  width: 15%;
+}
+
+.svg-container {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 2.0s ease-out forwards;
+  img{
+    width: 60%;
+  }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-image {
+  position: absolute;
+  object-fit: contain;
+  width: 80%;
+  margin-top: -10%;
+  margin-left: 15%;
+  
+  z-index: 1;
+}
+
+/* Общий стиль контейнера */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 97%;
+  padding: 0 1% 0 1%;
+}
+
+/* Блок контента */
+.content-box {
+  background-color: white; /* Белый фон */
+  border-radius: 20px; /* Закругленные углы */
+  padding: 3%;
+  width: 97%;
+}
+
+/* Заголовок */
+.content-box h1 {
+  font: 700 7vw 'Bebas Neue', sans-serif;
+  color: #b40000; /* Красный цвет текста */
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+
+/* Основной текст */
+.content-box p, #answer-options{
+  font: 400 1.5vw 'Muller', sans-serif;
+  color: #6a1b1b; /* Более тёмный оттенок красного */
+  line-height: 1.6;
+  margin-left: 6%;
+}
+
+/* Заголовок поменьше*/
+.zagolovok2 {
+  font: 700 4vw 'Bebas Neue', sans-serif;
+  color: #880D00; /* Красный цвет текста */
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+
+/* Заголовок еще поменьше*/
+.content-box h3 {
+  font: 1 3.5vw 'Bebas Neue', sans-serif;
+  color: #880D00; /* Красный цвет текста */
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+
+.content-box ul {
+  margin-left: 1.5vw;
+}
+
+.content-box ul li {
+  font: 400 1.5vw 'Muller', sans-serif;
+  color: #6a1b1b;
+  line-height: 1.6;
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+.history {
+  margin-top: 40px;
+}
+
+/* Стиль изображения */
+.scroll-image {
+  left: 0;
+  margin: 20px auto 20px auto;
+  transition: transform 0.1s linear;
+}
+
+.movies-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("marvel-comics-spider-man-7056.jpg");
+  margin-top: 34px;
+  width: 100%;
+  padding: 0px 0 6% 6%;
+}
+
+
+.section-title {
+  color: #fff;
+  font: 700 7vw 'Bebas Neue', sans-serif;
+  margin-bottom: 0%;
+  margin-left: 4%;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #b40000;
+  }
+}
+
+.divider {
+  align-self: center;
+  width: 80%;
+  max-width: 100%;
+  margin-left: 4%;
+  border: 5px solid #ad1300;
+}
+
+.movie-poster {
+  aspect-ratio: 1.72;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 60px 60px rgba(0, 0, 0, 0.37);
+}
+
+.movie-title {
+  font: 800 1.7vw 'Muller', sans-serif;
+  color: #f6f6f6;
+  font-weight: 800;
+  letter-spacing: -1.08px;
+  margin-top: 28px;
+}
+
+.movie-year {
+  font: 400 1.5vw 'Muller', sans-serif;
+  color: rgba(240, 240, 240, 0.7);
+  letter-spacing: -0.81px;
+}
+
+.movie-description {
+  font: 400 1.5vw 'Muller', sans-serif;
+  color: rgba(241, 241, 241, 0.75);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.read-more {
+  font: 400 1.5vw 'Muller', sans-serif;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: -0.81px;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  align-self: flex-start;
+  display: none;
+  
+}
+
+/* Карусель */
+.carousel {
+  position: relative;
+  margin-left: 5%;
+}
+
+/* Стрелка */
+.arrow {
+  position: absolute;
+  transform: translateY(90px);
+  background: none; /* Убираем стандартный фон кнопки */
+  border: none; /* Убираем границу */
+  padding: 0; /* Убираем отступы */
+  cursor: pointer;
+  z-index: 10;
+  left: -1%; /* Левая стрелка */
+}
+.arrow img{
+  display: block;
+  width: 50px; /* Настройте ширину изображения */
+  height: 50px; /* Настройте высоту изображения */
+  border-radius: 10px; /* Закругление углов, если нужно */
+}
+
+/* Контейнер с элементами */
+.carousel-container {
+  display: flex;
+  margin-top: 55px;
+  gap: 2.5%;
+  margin-left: 5%;
+  align-self: center;
+  width: 1127px;
+  max-width: 100%;
+  transition: transform 0.5s ease;
+  width: calc(100% + 20px); /* Ширина больше области видимости для плавного появления */
+}
+
+/* Стиль для каждого элемента карусели */
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 28%; /* Фиксированная ширина элементов */
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  margin-right: 50px;
+  margin-left: 50px;
+  transform: scale(1.1); /* Увеличение активного элемента */
+  border: #fff;
+}
+
+.carousel-item.active .read-more {
+  display: inline-block;
+}
+
+.carousel-item.active img{
+  border: 3px solid #fff;
+}
+
+
+/* Карусель */
+.carousel-pers {
+  position: relative;
+  margin-left: 5%;
+}
+/* Контейнер с элементами */
+.carousel-container-pers {
+  display: flex;
+  margin-top: 4%;
+  gap: 1.3%;
+  /*align-items: stretch;*/
+  margin-left: 5%;
+  align-self: center;
+  width: 85%;
+  transition: transform 0.5s ease;
+  width: calc(100% + 20px); /* Ширина больше области видимости для плавного появления */
+}
+
+/* Стиль для каждого элемента карусели */
+.carousel-item-pers {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font: 400 18px 'Muller', sans-serif;
+  flex: 0 0 10%; /* Фиксированная ширина элементов */
+  opacity: 0.8;
+  /*margin: auto -20px auto -20px;*/
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pers-poster {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 60px 60px rgba(0, 0, 0, 0.37);
+}
+
+.carousel-item-pers:hover{
+  opacity: 1;
+  transform: scale(1);
+  img {border: 3px solid #fff;}
+}
+
+.pers-title {
+  color: #f6f6f6;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1.08px;
+  margin-top: 28px;
+  width: 250px;
+}
+
+/*FOOTER -----------------------------------------------------------------*/
+
+/* Общий стиль футера */
+.footer {
+  color: #fff;
+  padding: 0 2%;
+  font: 400 1vw 'Muller', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Секции футера */
+.footer-section {
+  flex: 1 1 30%;
+  margin: 0 2%;
+}
+
+.links{
+  margin-left: 15%;
+}
+
+.footer-section h3 {
+  font: 700 1.5vw 'Bebas Neue', sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #480D05;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #d8958c;
+  padding-top: 10px;
+  color: white;
+  img{
+    width: 10%;
+  }
+}
+
+/* CАЙЙТ С ФИЛЬМАМИ----------------------------------------------------------------------------------------------------*/
+
+/* Контейнер всей секции */
+.carousel-container_posl_pr {
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  margin-top: -40px;
+}
+
+/* Контейнер карусели */
+.carousel_posl_pr {
+  display: flex;
+  gap: 20px; /* Расстояние между карточками */
+  overflow-x: auto; /* Горизонтальная прокрутка */
+  scroll-snap-type: x mandatory; /* Привязка к карточкам */
+  padding-bottom: 10px;
+  justify-content: flex-start;
+  margin: 20px 0 0 4%;
+}
+
+.carousel_posl_pr::-webkit-scrollbar {
+  display: none; /* Убираем скроллбар */
+}
+
+.carousel_posl_pr {
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Карточки */
+.card {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  flex: 0 0 15%; /* Фиксированная ширина карточки */
+  overflow: hidden;
+  scroll-snap-align: start; /* Привязка прокрутки */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  .movie-title{
+    font-size: 1.6vw;
+  }
+  .movie-year{
+    font-size: 1.4vw;
+  }
+  min-width: 100px;
+}
+
+/* Изображение внутри карточки */
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card .movie-title, .card .movie-year{
+  color: #480D05;
+  margin-top: auto;
+}
+
+.movies-grid .card:hover{
+  opacity: 1.1;
+  transform: translateY(-10px);
+}
+
+.card:hover .movie-title, .card:hover .movie-year{
+  color: #ad1300;
+}
+
+/*Список фильмов*/
+/* Контейнер  */
+.movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 4%;
+  max-width: 80%;
+  margin-top: 10px;
+}
+
+.sorting{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 2% 0 0 0;
+}
+
+.movies-section .zagolovok2{
+  color: #fff;
+  margin-left: 4%;
+}
+
+.butt {
+    margin: 0 0 0 0;
+    width: 55%;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    gap: 1%;
+    justify-content: space-evenly;
+    padding: 0.5% 0;
+    font: 300 1vw 'Muller', sans-serif;
+    letter-spacing: -0.72px;
+}
+
+/* Стиль для кнопок */
+.sort-btn {
+  background-color: #fff;
+  color: #353535;
+  border: 1px solid #cdcdcd;
+  border-radius: 20px;
+  padding: 1.5% 2%;
+  font-size: 1vw;
+  font-family: 'Muller', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Стиль при наведении */
+.sort-btn:hover {
+  background-color: #f8f8f8;
+  color: #000;
+  border-color: #bbb;
+}
+
+/* Стиль для активной кнопки */
+.sort-btn.active {
+  background-color: #ad1300;
+  color: #fff;
+  border-color: #880D00;
+}
+
+.sort-btn.active:hover {
+  background-color: #880D00;
+}
+
+/* Стили для контейнера поиска */
+.search-container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#search-input {
+  width: 51%;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2%;
+  font: 300 1vw 'Muller', sans-serif;
+  letter-spacing: -0.72px;
+}
+
+#search-input:focus {
+  border-color: #901f1f;
+}
+
+.card.hidden {
+  display: none; /* Скрывает карточку, если она не подходит под поиск */
+}
+
+/* Таблица */
+.movies-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 300 16px 'Muller', sans-serif;
+}
+
+/* Стиль заголовков */
+.movies-table th {
+  padding: 10px;
+  background-color: #f2eded;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Стиль ячеек таблицы */
+.movies-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+/* Стиль для рейтинга */
+.rating-star {
+  font-size: 20px;
+  color: #f39c12;
+}
+
+/* Стиль для строк */
+.movies-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.movies-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.movies-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.video-container {
+  width: 100%;
+  height: 500px; /* Задайте нужную высоту */
+}
+.video-container iframe {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* Чтобы видео заполнило контейнер */
+}
+
+#next-button {
+  padding: 10px 20px;
+  background-color: #ad1300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 400 1.5vw 'Muller', sans-serif;
+  line-height: 1.6;
+  margin: 1% 0 0 6%;
+}
+
+#next-button:hover {
+  background-color: #880D00;
+}
+
+#answer-options div {
+  margin: 10px 0;
+}
+
+#answer-options div input {
+  margin-right: 10px;
+}
+
+.persons #search-input{
+  width: 48%;
+}
+
+/* Фон с видео */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin-top: -90px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+/* Видео */
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрируем видео по вертикали и горизонтали */
+  min-width: 100%; /* Видео будет растягиваться по ширине */
+  min-height: 100%; /* Видео будет растягиваться по высоте */
+  object-fit: cover; /* Видео будет масштабироваться так, чтобы заполнить контейнер, сохраняя пропорции */
+
+}
+
+/* Полупрозрачный затемняющий слой */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Затемнение */
+}
+
+/* Центрирование текста */
+.zagolovok_video {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 200px;
+  h1 {
+    font-size: 128px;
+    margin: 0;
+  }
+}
+
+.video-container {
+  margin-top: -2%;
+  position: relative;
+  width: 100%; /* На всю ширину */
+  height: auto; /* Высота автоматически подстраивается */
+  overflow: hidden; /* Скрыть элементы, выходящие за границы */
+}
+
+video {
+  width: 100%; /* Растянуть видео на всю ширину */
+  height: auto; /* Сохраняем пропорции */
+  object-fit: cover; /* Видео растягивается, но не обрезается */
+}
+
+.actor .content-box{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  p, h1, h2{
+    width: 80%;
+  }
+}
+.actor img{
+  object-fit: cover;
+  width: 40%;
+  border-radius: 20px;
+  /*margin-right: 10px;*/
+}
+
+#avengers{
+  width: 30%;
+}
+
+.citata{
+  text-align: center;
+  h2{
+    font-size: 8vw;
+    margin-right: 6%;
+  }
+}
+
+.video_pers{
+  text-align: center;
+  video{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+/* Фон с видео */
+.img-background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  overflow: hidden;
+  margin-top: -90px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  img {
+    object-fit: contain;
+    width: 100%;
+    margin-top: -50px;
+    transition: transform 5s ease;
+  }
+}
+/* Центрирование текста */
+.zagolovok_img {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  img{
+    width: 40%;
+  }
+  h2{
+    font: 300 4vw 'Muller', sans-serif;
+    color: white;
+    opacity: 0;
+    transition: opacity 5s ease;
+    margin: -6% 0 0 0;
+  }
+}
+
+.oblozhka:hover{
+  #o {
+    transform: scale(1.2);
+  }
+  .zagolovok2{
+   opacity: 1;
+  }
+}
+
+.avengers{
+  margin-top: 20px;
+}
+
+/* Галерея */
+.gallery-section .section-title{
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+.pinterest-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 5px;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Карточка */
+.gallery-item {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 1s ease;
+  height: auto;
+  opacity: 0; /* Скрываем по умолчанию */
+  transform: translateY(30px); /* Смещаем вниз */
+  transition: all 0.6s ease; /* Плавное появление */
+}
+
+.gallery-item.visible {
+  opacity: 1; /* Показываем */
+  transform: translateY(0); /* Возвращаем на место */
+}
+
+.gallery-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Изображение */
+.gallery-item img {
+  width: 100%;
+  display: block;
+  aspect-ratio: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .marvel-landing {
+    padding: 25px 0px 0;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .logo-container {
+    padding: 10px 20px;
+  }
+
+  .nav-container {
+    max-width: 90%;
+    margin-right: 20px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .main-content img {
+    width: 80%;
+  }
+
+   .carousel-container-pers{
+    margin-left: 7%;
+  }
+
+  .video-container {
+    margin-top: 2%;
+  }
+
+  .carousel-item-pers {
+    width: 32%;
+  }
+}

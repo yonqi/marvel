@@ -1,0 +1,53 @@
+[
+    {
+      "image": "Персонажи_поиск/П_Железный_человек.svg",
+      "title": "Железный человек",
+      "link": "pers_spider_man.html"
+    },
+    {
+      "image": "Персонажи_поиск/П_Тор.svg",
+      "title": "Тор",
+      "description": "Это описание второй карточки.",
+      "link": "pers_spider_man.html"
+    },
+    {
+      "image": "Персонажи_поиск/П_Халк.svg",
+      "title": "Халк",
+      "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Капитан_Америка.svg",
+        "title": "Капитан Америка",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Соколиный_глаз.svg",
+        "title": "Соколиный глаз",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Черная_вдова.svg",
+        "title": "Черная вдова",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Локи.svg",
+        "title": "Локи",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Доктор_Эрик_Селвиг.svg",
+        "title": "Доктор Эрик Селвиг",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Танос.svg",
+        "title": "Танос",
+        "link": "pers_spider_man.html"
+    },
+    {
+        "image": "Персонажи_поиск/П_Ник_Фьюри.svg",
+        "title": "Ник Фьюри",
+        "link": "pers_spider_man.html"
+    }
+]

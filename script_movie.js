@@ -84,7 +84,7 @@ async function loadData() {
         const halfHeight = mainImageHeight / 2;
 
         // Устанавливаем `top` для зависимого объекта
-        dependentImage.style.top = `${halfHeight - 100}px`;
+        dependentImage.style.top = `${halfHeight - 150}px`;
     }
 
     // Запускаем функцию после загрузки изображения

@@ -71,7 +71,7 @@ async function loadData() {
   loadData();
 
   // Дожидаемся загрузки DOM
-  window.onload = () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const mainImage = document.getElementById('qq');
     const dependentImage = document.getElementById('dependentImage');
 
@@ -93,4 +93,4 @@ async function loadData() {
 
     // Также обновляем позицию при изменении размера окна
     window.addEventListener('resize', updatePosition);
-};
+});

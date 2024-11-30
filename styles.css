@@ -973,4 +973,7 @@ video {
   .footer-section h3{
     font-size: 3vw;
   }
+  .zagolovok_img {
+    top: 15%;
+  }
 }

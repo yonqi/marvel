@@ -13,7 +13,7 @@ items.forEach((item) => {
 let currentIndex = 0;
 
 const windowWidth = window.innerWidth; // Ширина окна
-const itemWidth = (items[0].offsetWidth / windowWidth) * 100 + 6; // Ширина элемента + отступы
+const itemWidth = (items[0].offsetWidth / windowWidth) * 125; // Ширина элемента + отступы
 const totalItems = container.children.length;
 
 // Функция обновления карусели
@@ -68,7 +68,7 @@ items_pers.forEach((item) => {
 
 // Устанавливаем начальный индекс
 let currentIndexPers = 0;
-const itemWidthPers = (items_pers[0].offsetWidth / windowWidth) * 100 + 3.5; // Ширина элемента + отступы
+const itemWidthPers = (items_pers[0].offsetWidth / windowWidth) * 121; // Ширина элемента + отступы
 const totalItemsPers = container_pers.children.length;
 
 // Функция обновления карусели

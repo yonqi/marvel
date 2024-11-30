@@ -697,7 +697,7 @@ body {
 
 /* Фон с видео */
 .video-background {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 700px;
   overflow: hidden;
@@ -731,7 +731,7 @@ body {
 /* Центрирование текста */
 .zagolovok_video {
   position: absolute;
-  top: 35%;
+  top: 300px;
   width: 100%;
   color: white;
   text-align: center;

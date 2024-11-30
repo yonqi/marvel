@@ -919,10 +919,16 @@ video {
     width: 80%;
   }
 
-   .carousel-container-pers{
+  .carousel-container-pers{
     margin-left: 7%;
   }
-
+  .movie-title {
+    font-size: 3vw;
+  }
+  .movie-year {
+    font-size: 2vw;
+  }
+  
   .video-container {
     margin-top: 2%;
   }
@@ -931,13 +937,17 @@ video {
     width: 32%;
   }
 
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+
   .card {
     flex: 0 0 43%;
     .movie-title{
-      font-size: 2vw;
+      font-size: 3vw;
     }
     .movie-year{
-      font-size: 1.8vw;
+      font-size: 2vw;
     }
   }
   .zagolovok2{
@@ -945,5 +955,14 @@ video {
   }
   .content-box h3{
     font-size: 4.5vw;
+  }
+  .footer{
+    font-size: 2vw;
+    img{
+      width: 20%;
+    }
+  }
+  .footer-section h3{
+    font-size: 3vw;
   }
 }

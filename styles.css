@@ -8,6 +8,8 @@
     font-style: normal;
 }
 
+@import url("bebasneue/stylesheet.css");
+
 body {
   overflow-x: hidden;
   background-color: #b61201;

@@ -2,28 +2,28 @@ const questions = [
     {
         question: "Как бы вы описали себя?",
         options: [
-            { answer: "Я лидер", character: "Капитан Америка" },
-            { answer: "Я стратег", character: "Доктор Стрэндж" },
-            { answer: "Я одиночка", character: "Черная Вдова" },
-            { answer: "Я эксцентричный гений", character: "Железный Человек" }
+            { answer: "Я лидер", character: "КАПИТАН АМЕРИКА" },
+            { answer: "Я стратег", character: "ДОКТОР СТРЭНДЖ" },
+            { answer: "Я одиночка", character: "ЧЕРНАЯ ВДОВА" },
+            { answer: "Я эксцентричный гений", character: "ЖЕЛЕЗНЫЙ ЧЕЛОВЕК" }
         ]
     },
     {
         question: "Какую суперсилу вы бы выбрали?",
         options: [
-            { answer: "Сверхсила", character: "Халк" },
-            { answer: "Невидимость", character: "Человек-невидимка" },
-            { answer: "Манипуляция временем", character: "Доктор Стрэндж" },
-            { answer: "Умение летать", character: "Железный Человек" }
+            { answer: "Сверхсила", character: "ХАЛК" },
+            { answer: "Невидимость", character: "ЧЕЛОВЕК-НЕВИДИМКА" },
+            { answer: "Манипуляция временем", character: "ДОКТОР СТРЭНДЖ" },
+            { answer: "Умение летать", character: "ЖЕЛЕЗНЫЙ ЧЕЛОВЕК" }
         ]
     },
     {
         question: "Какую роль вам ближе?",
         options: [
-            { answer: "Защитник", character: "Капитан Америка" },
-            { answer: "Силовой лидер", character: "Тор" },
-            { answer: "Необычный гений", character: "Тони Старк" },
-            { answer: "Один против всех", character: "Черная Вдова" }
+            { answer: "Защитник", character: "КАПИТАН АМЕРИКА" },
+            { answer: "Силовой лидер", character: "ТОР" },
+            { answer: "Необычный гений", character: "ЖЕЛЕЗНЫЙ ЧЕЛОВЕК" },
+            { answer: "Один против всех", character: "ЧЕРНАЯ ВДОВА" }
         ]
     }
 ];
@@ -96,16 +96,16 @@ function showResult() {
 
     // В этом блоке можно добавить описание для каждого персонажа
     switch (mostFrequentCharacter) {
-        case "Капитан Америка":
+        case "КАПИТАН АМЕРИКА":
             resultDescription.textContent = "Вы — Капитан Америка, символ чести и лидерства.";
             break;
-        case "Доктор Стрэндж":
+        case "ДОКТОР СТРЭНДЖ":
             resultDescription.textContent = "Вы — Доктор Стрэндж, мастер магии и манипулятор временем.";
             break;
-        case "Халк":
+        case "ХАЛК":
             resultDescription.textContent = "Вы — Халк, воплощение силы и ярости.";
             break;
-        case "Тони Старк":
+        case "ЖЕЛЕЗНЫЙ ЧЕЛОВЕК":
             resultDescription.textContent = "Вы — Тони Старк, гениальный изобретатель и миллиардер.";
             break;
         // Добавьте остальные персонажи...

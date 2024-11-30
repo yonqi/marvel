@@ -141,7 +141,7 @@ body {
 }
 
 /* Основной текст */
-.content-box p, #answer-options{
+.content-box p, #answer-options, #actor{
   font: 400 1.5vw 'Muller', sans-serif;
   color: #6a1b1b; /* Более тёмный оттенок красного */
   line-height: 1.6;

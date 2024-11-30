@@ -211,6 +211,8 @@ body {
     text-decoration: underline;
     color: #b40000;
   }
+  font: 'BebasNeueBold';
+  /*font-weight: bold;*/
 }
 
 .divider {

@@ -497,7 +497,7 @@ body {
   .movie-year{
     font-size: 1.4vw;
   }
-  min-width: 180px;
+  min-width: 150px;
 }
 
 /* Изображение внутри карточки */
@@ -932,11 +932,18 @@ video {
   }
 
   .card {
+    flex: 0 0 43%;
     .movie-title{
       font-size: 2vw;
     }
     .movie-year{
       font-size: 1.8vw;
     }
+  }
+  .zagolovok2{
+    font-size: 5vw;
+  }
+  .content-box h3{
+    font-size: 4.5vw;
   }
 }

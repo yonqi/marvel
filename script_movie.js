@@ -69,3 +69,27 @@ async function loadData() {
 
   // Загружаем данные и отображаем карточки
   loadData();
+
+  // Дожидаемся загрузки DOM
+  document.addEventListener("DOMContentLoaded", () => {
+    const mainImage = document.getElementById('o');
+    const dependentImage = document.getElementById('dependentImage');
+
+    // Функция для обновления положения зависимого объекта
+    function updatePosition() {
+        // Получаем текущую высоту изображения
+        const mainImageHeight = mainImage.offsetHeight;
+
+        // Вычисляем половину высоты
+        const halfHeight = mainImageHeight / 2;
+
+        // Устанавливаем `top` для зависимого объекта
+        dependentImage.style.top = `${halfHeight - 100}px`;
+    }
+
+    // Запускаем функцию после загрузки изображения
+    mainImage.addEventListener('load', updatePosition);
+
+    // Также обновляем позицию при изменении размера окна
+    window.addEventListener('resize', updatePosition);
+});

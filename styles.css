@@ -812,7 +812,7 @@ video {
 /* Центрирование текста */
 .zagolovok_img {
   position: absolute;
-  top: 20%;
+  /*top: 20%;*/
   width: 100%;
   color: white;
   text-align: center;

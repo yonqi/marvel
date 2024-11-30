@@ -13,7 +13,7 @@ items.forEach((item) => {
 let currentIndex = 0;
 
 const windowWidth = window.innerWidth; // Ширина окна
-const itemWidth = (items[0].offsetWidth / windowWidth) * 125; // Ширина элемента + отступы
+const itemWidth = (items[0].offsetWidth / windowWidth) * 124.5; // Ширина элемента + отступы
 const totalItems = container.children.length;
 
 // Функция обновления карусели

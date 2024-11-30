@@ -71,8 +71,8 @@ async function loadData() {
   loadData();
 
   // Дожидаемся загрузки DOM
-  document.addEventListener("DOMContentLoaded", () => {
-    const mainImage = document.getElementById('o');
+  window.onload = () => {
+    const mainImage = document.getElementById('qq');
     const dependentImage = document.getElementById('dependentImage');
 
     // Функция для обновления положения зависимого объекта
@@ -83,8 +83,9 @@ async function loadData() {
         // Вычисляем половину высоты
         const halfHeight = mainImageHeight / 2;
 
+        dependentImage.style.top = `0`;
         // Устанавливаем `top` для зависимого объекта
-        dependentImage.style.top = `${halfHeight - 150}px`;
+        dependentImage.style.top = `${halfHeight-100}px`;
     }
 
     // Запускаем функцию после загрузки изображения
@@ -92,4 +93,4 @@ async function loadData() {
 
     // Также обновляем позицию при изменении размера окна
     window.addEventListener('resize', updatePosition);
-});
+};

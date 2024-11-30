@@ -913,6 +913,7 @@ video {
   .description {
     max-width: 100%;
     margin-top: 40px;
+    font-size: 1.7vw;
   }
 
   .main-content img {
@@ -927,7 +928,7 @@ video {
     margin-left: 7%;
   }
   .movie-title {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 3vw;
   }
   .movie-year {
@@ -946,15 +947,10 @@ video {
     flex: 0 0 50%;
   }
 
-  .description{
-    font-size: 1.7vw;
-  }
-
-
   .card {
     flex: 0 0 43%;
     .movie-title{
-      font-weight: 600;
+      font-weight: 400;
       font-size: 3vw;
     }
     .movie-year{
@@ -966,6 +962,9 @@ video {
   }
   .content-box h3{
     font-size: 4.5vw;
+  }
+  .content-box p{
+    font-size: 2vw;
   }
   .footer{
     font-size: 2vw;

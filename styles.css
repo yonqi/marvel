@@ -18,7 +18,7 @@ body {
 .marvel-landing {
   display: flex;
   flex-direction: column;
-  clip-path: inset(0 0 0 0);
+  /*clip-path: inset(0 0 0 0);*/
   padding: 25px 0 0 0;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .main-content {
-  margin: 40px 0 48% 10%;
+  margin: 40px 0 0% 10%;
   width: 90%;
 }
 
@@ -106,12 +106,12 @@ body {
 }
 
 .hero-image {
-  position: absolute;
+  position: relative;
   object-fit: contain;
   width: 80%;
   margin-top: -10%;
   margin-left: 15%;
-  
+  overflow-x: hidden;
   z-index: 1;
 }
 
@@ -190,11 +190,18 @@ body {
   transition: transform 0.1s linear;
 }
 
+.scrolling{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .movies-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("marvel-comics-spider-man-7056.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("marvel-comics-spider-man-7056.jpg");;
   margin-top: 34px;
-  width: 100%;
-  padding: 0px 0 6% 6%;
+  width: 94%;
+  padding: 0px 0 4% 6%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 

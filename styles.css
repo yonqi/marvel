@@ -489,7 +489,7 @@ body {
   .movie-year{
     font-size: 1.4vw;
   }
-  min-width: 100px;
+  min-width: 180px;
 }
 
 /* Изображение внутри карточки */
@@ -921,5 +921,14 @@ video {
 
   .carousel-item-pers {
     width: 32%;
+  }
+
+  .card {
+    .movie-title{
+      font-size: 2vw;
+    }
+    .movie-year{
+      font-size: 1.8vw;
+    }
   }
 }

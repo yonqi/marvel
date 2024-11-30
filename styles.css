@@ -919,10 +919,15 @@ video {
     width: 80%;
   }
 
+  .hero-image{
+    margin-left: 23%;
+  }
+
   .carousel-container-pers{
     margin-left: 7%;
   }
   .movie-title {
+    font-weight: 600;
     font-size: 3vw;
   }
   .movie-year {
@@ -941,9 +946,15 @@ video {
     flex: 0 0 50%;
   }
 
+  .description{
+    font-size: 1.7vw;
+  }
+
+
   .card {
     flex: 0 0 43%;
     .movie-title{
+      font-weight: 600;
       font-size: 3vw;
     }
     .movie-year{
